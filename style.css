@@ -23,6 +23,10 @@ ul {
     padding: 0;
 }
 
+img {
+    display: block;
+}
+
 
 /*=========Body=========*/
 
@@ -85,7 +89,7 @@ body {
     margin-left: 50px;
 }
 
-.nav-header {
+.header .container {
     display: flex;
     align-items: center;
 }
@@ -97,6 +101,9 @@ body {
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--accent-color-black);
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 
 .logo {
@@ -184,7 +191,11 @@ body {
 .nav-link:hover,
 .nav-link:focus,
 .current,
-.current-portfolio {
+.сurrent-portfolio {
+    color: var(--accent-color);
+}
+
+.nav-list-item .current-portfolio {
     color: var(--accent-color);
 }
 
@@ -242,18 +253,22 @@ body {
 }
 
 
-/*============DESKTOP=============*/
+/*============DESKTOP (Чем мы занимаемся)=============*/
 
 .about-desktop-list {
     margin-left: 30px;
     width: 370px;
 }
 
+.section-desktop {
+    padding-bottom: 86px;
+}
+
 
 /*===============Члени команди================*/
 
 .section-about {
-    padding-top: 94px;
+    padding-top: 102px;
     padding-bottom: 94px;
     background: var(--accen-section-about);
 }
@@ -285,7 +300,6 @@ body {
     color: var(--accent-color-black);
     text-align: center;
     margin-bottom: 10px;
-    margin-top: 30px;
 }
 
 .about-text {
@@ -293,7 +307,11 @@ body {
     line-height: 1.18;
     color: var(--accent-color-grey);
     text-align: center;
-    margin-bottom: 30px;
+}
+
+.our-comand {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .main-button:hover,
@@ -303,15 +321,15 @@ body {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     cursor: pointer;
+    outline: 0;
 }
 
 
 /*============"portfolio"=============*/
 
-.main-title {
+.portfolio {
     padding-top: 94px;
     padding-bottom: 94px;
-    background-color: #E5E5E5;
 }
 
 .main-button {
@@ -321,7 +339,6 @@ body {
     font-size: 16px;
     line-height: 1.62;
     padding: 6px 22px;
-    margin: 2px 2px;
     border: 0;
     cursor: pointer;
 }
@@ -336,7 +353,6 @@ body {
 .list-name-port {
     margin-left: 8px;
     color: var(--accent-color-white);
-    border: 1px solid #EEEEEE;
 }
 
 .list-portfolio {
@@ -348,6 +364,9 @@ body {
     width: 370px;
     margin-right: 30px;
     margin-bottom: 30px;
+    background: var(--accent-color-white);
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
 }
 
 .card:nth-child(3n) {
@@ -363,7 +382,7 @@ body {
     font-size: 18px;
     line-height: 2;
     color: var(--accent-color-black);
-    margin-top: 4px;
+    margin-bottom: 4px;
 }
 
 .portfolio-text {
@@ -371,6 +390,13 @@ body {
     font-size: 16px;
     line-height: 1.88;
     color: var(--accent-color-grey);
+}
+
+.info-portfolio {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 
